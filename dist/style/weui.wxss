@@ -2,6 +2,8 @@
  * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
  * Copyright 2017 Tencent, Inc.
  * Licensed under the MIT license
+ *
+ * 修改 郑维一
  */
 page {
 	line-height: 1.6;
@@ -15,6 +17,7 @@ icon {
 .weui-cells {
 	position: relative;
 	margin-top: 1.17647059em;
+  color: #333;
 	background-color: #fff;
 	line-height: 1.41176471;
 	font-size: 17px
@@ -22,7 +25,7 @@ icon {
 
 .weui-cells:before {
 	top: 0;
-	border-top: 1rpx solid #d9d9d9
+	border-top: 1rpx solid #F8F8F8
 }
 
 .weui-cells:after,.weui-cells:before {
@@ -31,19 +34,19 @@ icon {
 	left: 0;
 	right: 0;
 	height: 1px;
-	color: #d9d9d9
+	color: #F8F8F8
 }
 
 .weui-cells:after {
 	bottom: 0;
-	border-bottom: 1rpx solid #d9d9d9
+	border-bottom: 1rpx solid #F8F8F8
 }
 
 .weui-cells__title {
 	margin-top: .77em;
 	margin-bottom: .3em;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 40rpx;
+	padding-right: 15rpx;
 	color: #999;
 	font-size: 14px
 }
@@ -61,7 +64,7 @@ icon {
 }
 
 .weui-cell {
-	padding: 10px 15px;
+	padding: 30rpx 30rpx 30rpx 40rpx;
 	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -78,8 +81,8 @@ icon {
 	top: 0;
 	right: 0;
 	height: 1px;
-	border-top: 1rpx solid #d9d9d9;
-	color: #d9d9d9;
+	border-top: 1rpx solid #F8F8F8;
+	color: #F8F8F8;
 	left: 15px
 }
 
@@ -88,7 +91,7 @@ icon {
 }
 
 .weui-cell_active {
-	background-color: #ececec
+	background-color: #F0F0F0
 }
 
 .weui-cell_primary {
@@ -122,11 +125,11 @@ icon {
 	display: inline-block;
 	height: 6px;
 	width: 6px;
-	border-width: 2px 2px 0 0;
-	border-color: #c8c8cd;
+	border-width: 1px 1px 0 0;
+	border-color: #CCC;
 	border-style: solid;
-	-webkit-transform: matrix(.71,.71,-.71,.71,0,0);
-	transform: matrix(.71,.71,-.71,.71,0,0);
+	-webkit-transform: matrix(1,1,-1,1,0,0);
+	transform: matrix(1,1,-1,1,0,0);
 	position: relative;
 	top: -2px;
 	position: absolute;
@@ -141,7 +144,7 @@ icon {
 }
 
 .weui-cell_link:active {
-	background-color: #ececec
+	background-color: #F0F0F0
 }
 
 .weui-cell_link:first-child:before {
@@ -159,7 +162,7 @@ icon {
 }
 
 .weui-check__label:active {
-	background-color: #ececec
+	background-color: #F0F0F0
 }
 
 .weui-check {
@@ -176,8 +179,8 @@ icon {
 }
 
 .weui-cell_input {
-	padding-top: 0;
-	padding-bottom: 0
+	padding-top: 10rpx;
+	padding-bottom: 10rpx
 }
 
 .weui-label {
@@ -233,7 +236,7 @@ icon {
 
 .weui-form-preview:before {
 	top: 0;
-	border-top: 1rpx solid #d9d9d9
+	border-top: 1rpx solid #F8F8F8
 }
 
 .weui-form-preview:after,.weui-form-preview:before {
@@ -242,12 +245,12 @@ icon {
 	left: 0;
 	right: 0;
 	height: 1px;
-	color: #d9d9d9
+	color: #F8F8F8
 }
 
 .weui-form-preview:after {
 	bottom: 0;
-	border-bottom: 1rpx solid #d9d9d9
+	border-bottom: 1rpx solid #F8F8F8
 }
 
 .weui-form-preview__value {
@@ -272,8 +275,8 @@ icon {
 	bottom: 0;
 	right: 0;
 	height: 1px;
-	border-bottom: 1rpx solid #d9d9d9;
-	color: #d9d9d9;
+	border-bottom: 1rpx solid #F8F8F8;
+	color: #F8F8F8;
 	left: 15px
 }
 
@@ -362,17 +365,17 @@ icon {
 }
 
 .weui-cell_select {
-	padding: 0
+	padding: 10rpx 0
 }
 
 .weui-select {
 	position: relative;
-	padding-left: 15px;
+	padding-left: 40rpx;
 	padding-right: 30px;
 	height: 2.58823529em;
 	min-height: 2.58823529em;
 	line-height: 2.58823529em;
-	border-right: 1rpx solid #d9d9d9
+	border-right: 1rpx solid #F8F8F8
 }
 
 .weui-select:before {
@@ -380,11 +383,11 @@ icon {
 	display: inline-block;
 	height: 6px;
 	width: 6px;
-	border-width: 2px 2px 0 0;
-	border-color: #c8c8cd;
+	border-width: 1px 1px 0 0;
+	border-color: #CCC;
 	border-style: solid;
-	-webkit-transform: matrix(.71,.71,-.71,.71,0,0);
-	transform: matrix(.71,.71,-.71,.71,0,0);
+	-webkit-transform: matrix(1,1,-1,1,0,0);
+	transform: matrix(1,1,-1,1,0,0);
 	position: relative;
 	top: -2px;
 	position: absolute;
@@ -398,7 +401,7 @@ icon {
 }
 
 .weui-cell__bd_in-select-before,.weui-cell__hd_in-select-after {
-	padding-left: 15px
+	padding-left: 40rpx
 }
 
 .weui-cell_vcode {
@@ -426,8 +429,8 @@ icon {
 }
 
 .weui-cell_switch {
-	padding-top: 6px;
-	padding-bottom: 6px
+	padding-top: 20rpx;
+	padding-bottom: 20rpx
 }
 
 .weui-uploader__hd {
@@ -498,7 +501,7 @@ icon {
 	margin-bottom: 9px;
 	width: 77px;
 	height: 77px;
-	border: 1px solid #d9d9d9
+	border: 1px solid #F8F8F8
 }
 
 .weui-uploader__input-box:after,.weui-uploader__input-box:before {
@@ -508,7 +511,7 @@ icon {
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	background-color: #d9d9d9
+	background-color: #F8F8F8
 }
 
 .weui-uploader__input-box:before {
@@ -646,7 +649,7 @@ icon {
 
 .weui-agree {
 	display: block;
-	padding: .5em 15px;
+	padding: .5em 15px .5em 40rpx;
 	font-size: 13px
 }
 
@@ -731,8 +734,8 @@ icon {
 }
 
 .weui-grids {
-	border-top: 1rpx solid #d9d9d9;
-	border-left: 1rpx solid #d9d9d9;
+	border-top: 1rpx solid #F8F8F8;
+	border-left: 1rpx solid #F8F8F8;
 	overflow: hidden
 }
 
@@ -742,8 +745,8 @@ icon {
 	padding: 20px 10px;
 	width: 33.33333333%;
 	box-sizing: border-box;
-	border-right: 1rpx solid #d9d9d9;
-	border-bottom: 1rpx solid #d9d9d9
+	border-right: 1rpx solid #F8F8F8;
+	border-bottom: 1rpx solid #F8F8F8
 }
 
 .weui-grid_active {
@@ -776,8 +779,7 @@ icon {
 	vertical-align: middle;
 	-webkit-animation: a 1s steps(12) infinite;
 	animation: a 1s steps(12) infinite;
-	background: transparent url(data:image/svg+xml;
-	base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;background-size: 100%
+	background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;background-size: 100%
 }
 
 .weui-loading.weui-loading_transparent {
@@ -813,7 +815,7 @@ icon {
 	padding: .15em .4em;
 	min-width: 8px;
 	border-radius: 18px;
-	background-color: #e64340;
+	background-color: #FF9326;
 	color: #fff;
 	line-height: 1.2;
 	text-align: center;
@@ -1074,7 +1076,7 @@ icon {
 }
 
 .weui-navbar__item.weui-bar__item_on {
-	color: #1aad19
+	color: #FF9326
 }
 
 .weui-navbar__slider {
@@ -1084,7 +1086,7 @@ icon {
 	bottom: 0;
 	width: 6em;
 	height: 3px;
-	background-color: #1aad19;
+	background-color: #FF9326;
 	-webkit-transition: -webkit-transform .3s;
 	transition: -webkit-transform .3s;
 	transition: transform .3s;
@@ -1122,9 +1124,9 @@ icon {
 	display: -webkit-flex;
 	display: flex;
 	box-sizing: border-box;
-	background-color: #efeff4;
-	border-top: 1rpx solid #d7d6dc;
-	border-bottom: 1rpx solid #d7d6dc
+	background-color: #F8F8F8;
+	border-top: 1rpx solid #F8F8F8;
+	border-bottom: 1rpx solid #F8F8F8
 }
 
 .weui-icon-search {
@@ -1194,6 +1196,6 @@ icon {
 .weui-search-bar__cancel-btn {
 	margin-left: 10px;
 	line-height: 28px;
-	color: #09bb07;
+	color: #FF9326;
 	white-space: nowrap
 }
